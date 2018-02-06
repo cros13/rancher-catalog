@@ -65,5 +65,6 @@ version: '2'
       required: true
       default: "host"
 services:
- plex:
-   scale: 1
+  plex:
+    scale: 1
+    start_on_create: true
