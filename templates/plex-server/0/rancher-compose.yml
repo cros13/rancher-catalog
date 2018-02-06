@@ -56,7 +56,7 @@
     - variable: "NET"
       description: "select Network type"
       label: "Network"
-      type: enum
+      type: "enum"
       options:
         - host
         - managed
