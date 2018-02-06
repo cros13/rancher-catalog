@@ -16,4 +16,7 @@ services:
     - ${PATHMOVIES}:/data/Movies
     - ${PATHMUSIC}:/data/Music
     - ${PATHFLAC}:/data/FLAC
-  net: ${NET}
+  network_mode: ${NET}
+  labels:
+      io.rancher.container.pull_image: always
+      io.rancher.container.dns: 'true'
