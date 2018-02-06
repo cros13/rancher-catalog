@@ -1,6 +1,6 @@
 .catalog:
   name: Plex Server
-  version: v0.1
+  version: v0.6
   description: Plex Media Server
   questions:
     - variable: "PORT"
