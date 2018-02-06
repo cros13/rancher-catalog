@@ -20,6 +20,3 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.dns: 'true'
-volumes:
-  config:
-    driver: rancher-nfs
