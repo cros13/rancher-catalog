@@ -6,8 +6,8 @@
     - variable: "PORT"
       type: "string"
       label: "PORT"
-      description: Frontend Port of Plex
-      default: 32400
+      description: Frontend Port of Plex external:internal
+      default: 32400:32400
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
