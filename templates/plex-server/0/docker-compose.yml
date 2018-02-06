@@ -8,5 +8,10 @@ plex:
     - ${PORT}:32400
   volumes:
     - ${PATHCONFIG}:/config
-    - ${PATHMEDIA}:/data
+    - ${PATHMEDIA}:/config/Library/Application Support/Plex Media Server/Media
+    - ${PATHMETADATA}:/config/Library/Application Support/Plex Media Server/Metadata
+    - ${PATHTV}:/data/TV
+    - ${PATHMOVIES}:/data/Movies
+    - ${PATHMUSIC}:/data/Music
+    - ${PATHFLAC}:/data/FLAC
   net: ${NET}
