@@ -13,12 +13,12 @@
       label: "Config Path"
       description: persistant Path to your Plex Config (/home/nick/plex, ...)
       default: '/var/plex'
-    - variable: "MEDIACONFIG"
+    - variable: "PATHMEDIA"
       type: "string"
       label: "Media Path"
       description: persistant Path to your Plex Config (/home/nick/plex, ...)
       default: '/mnt/ssd1'
-    - variable: "METADATACONFIG"
+    - variable: "PATHMETADATA"
       type: "string"
       label: "Metadata Path"
       description: persistant Path to your Plex Config (/home/nick/plex, ...)
