@@ -47,19 +47,23 @@
       type: "string"
       label: "PUID"
       description: GroupID (not required)
+      default: 1100
     - variable: "PGID"
       type: "string"
       label: "PGID"
       description: PGID (not required)
+      default: 1100
     - variable: NET
       description: "select Network type"
       label: "Network"
-      type: enum   
+      type: enum
       options:
         - host
         - managed
         - none
       required: true
       default: "host"
-plex:
-  scale: 1
+services:
+  plex:
+    scale: 1
+    start_on_create: true
