@@ -11,13 +11,38 @@
     - variable: "PATHCONFIG"
       type: "string"
       label: "Config Path"
-      description: persistang Path to your Plex Config (/home/nick/plex, ...)
-      default: '/home'
-    - variable: "PATHMEDIA"
+      description: persistant Path to your Plex Config (/home/nick/plex, ...)
+      default: '/var/plex'
+    - variable: "MEDIACONFIG"
       type: "string"
       label: "Media Path"
-      description: the Path to your library (/media, or a nfs mount /mnt, ...)
-      default: '/media'
+      description: persistant Path to your Plex Config (/home/nick/plex, ...)
+      default: '/mnt/ssd1'
+    - variable: "METADATACONFIG"
+      type: "string"
+      label: "Metadata Path"
+      description: persistant Path to your Plex Config (/home/nick/plex, ...)
+      default: '/mnt/ssd2'
+    - variable: "PATHTV"
+      type: "string"
+      label: "TV Path"
+      description: the Path to your TV library (/media, or a nfs mount /mnt, ...)
+      default: '/mnt/TV'
+    - variable: "PATHMOVIES"
+      type: "string"
+      label: "Movies Path"
+      description: the Path to your Movies library (/media, or a nfs mount /mnt, ...)
+      default: '/mnt/Movies'
+    - variable: "PATHMUSIC"
+      type: "string"
+      label: "Music Path"
+      description: the Path to your Music library (/media, or a nfs mount /mnt, ...)
+      default: '/mnt/Music'
+    - variable: "PATHFLAC"
+      type: "string"
+      label: "FLAC Path"
+      description: the Path to your FLAC library (/media, or a nfs mount /mnt, ...)
+      default: '/mnt/FLAC'
     - variable: "PUID"
       type: "string"
       label: "PUID"
