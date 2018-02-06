@@ -1,3 +1,4 @@
+version: '2'
 .catalog:
   name: Plex Server
   version: v0.6
