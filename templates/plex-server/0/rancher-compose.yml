@@ -53,7 +53,7 @@
       label: "PGID"
       description: PGID (not required)
       default: 1100
-    - variable: NET
+    - variable: "NET"
       description: "select Network type"
       label: "Network"
       type: enum
