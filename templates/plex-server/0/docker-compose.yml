@@ -8,15 +8,18 @@ services:
       - PGID=${PGID}
     ports:
       - ${PORT}
-  volumes:
-    - ${PATHCONFIG}:/config
-    - ${PATHMEDIA}:/config/Library/Application Support/Plex Media Server/Media
-    - ${PATHMETADATA}:/config/Library/Application Support/Plex Media Server/Metadata
-    - ${PATHTV}:/data/TV
-    - ${PATHMOVIES}:/data/Movies
-    - ${PATHMUSIC}:/data/Music
-    - ${PATHFLAC}:/data/FLAC
-  net: ${NET}
-  labels:
+    volumes:
+     - ${PATHCONFIG}:/config
+     - ${PATHMEDIA}:/config/Library/Application Support/Plex Media Server/Media
+     - ${PATHMETADATA}:/config/Library/Application Support/Plex Media Server/Metadata
+     - ${PATHTV}:/data/TV
+     - ${PATHMOVIES}:/data/Movies
+     - ${PATHMUSIC}:/data/Music
+     - ${PATHFLAC}:/data/FLAC
+network_mode: ${NET}
+    labels:
       io.rancher.container.pull_image: always
       io.rancher.container.dns: 'true'
+volumes:
+  config:
+    driver: rancher-nfs
